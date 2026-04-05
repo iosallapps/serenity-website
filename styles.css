@@ -136,6 +136,7 @@ nav .container {
     background: var(--gradient-1);
     color: white;
     box-shadow: var(--shadow-md);
+    border: none;
 }
 
 .btn-primary:hover {

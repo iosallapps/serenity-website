@@ -403,9 +403,22 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     /* Navigation */
+    header {
+        position: relative;
+    }
+
+    nav {
+        padding: 16px 0;
+    }
+
     nav .container {
         flex-direction: column;
         gap: 16px;
+    }
+
+    .logo {
+        font-size: 20px;
+        white-space: nowrap;
     }
 
     .nav-links {
@@ -417,7 +430,7 @@ footer {
 
     /* Hero Section */
     .hero {
-        padding: 100px 0 60px;
+        padding: 40px 0 60px;
     }
 
     .hero .container {

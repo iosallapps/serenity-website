@@ -179,17 +179,12 @@ nav .container {
     border: 8px solid #1a1a1a;
 }
 
-.app-screenshot-placeholder {
+.app-screenshot {
     width: 100%;
     height: 100%;
-    background: white;
+    object-fit: cover;
+    display: block;
 }
-
-.gradient-bg {
-    width: 100%;
-    height: 100%;
-    background: var(--gradient-1);
-    opacity: 0.3;
 }
 
 /* Features Section */
@@ -424,35 +419,18 @@ footer {
         margin-top: 40px;
     }
 
-    .phone-mockup {
-        width: 280px;
-        height: 560px;
-    }
+.phone-mockup {
+    width: 320px;
+    height: 640px;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    border: 8px solid #1a1a1a;
+}
 
-    .features-grid,
-    .steps-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .features h2,
-    .how-it-works h2,
-    .cta h2 {
-        font-size: 36px;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .footer-links {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .nav-links {
-        gap: 20px;
-        font-size: 14px;
-    }
+.app-screenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }

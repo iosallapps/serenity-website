@@ -402,39 +402,115 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Navigation */
+    nav .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 100px 0 60px;
+    }
+
     .hero .container {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 40px;
     }
 
     .hero-content h2 {
-        font-size: 40px;
+        font-size: 36px;
+        line-height: 1.2;
     }
 
     .tagline {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .cta-buttons {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
     }
 
     .hero-image {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
-.phone-mockup {
-    width: 320px;
-    height: 640px;
-    border-radius: 40px;
-    overflow: hidden;
-    box-shadow: var(--shadow-xl);
-    border: 8px solid #1a1a1a;
-}
+    .phone-mockup {
+        width: 280px;
+        height: 560px;
+        border-radius: 36px;
+        border: 6px solid #1a1a1a;
+    }
 
-.app-screenshot {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    /* Features Section */
+    .features {
+        padding: 60px 0;
+    }
+
+    .features h2 {
+        font-size: 32px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    /* How It Works */
+    .how-it-works {
+        padding: 60px 0;
+    }
+
+    .how-it-works h2 {
+        font-size: 32px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    /* CTA Section */
+    .cta {
+        padding: 60px 0;
+    }
+
+    .cta h2 {
+        font-size: 32px;
+    }
+
+    .cta > p {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    /* Container padding */
+    .container {
+        padding: 0 20px;
+    }
 }

@@ -15,7 +15,7 @@
     --bg-light: #F7FAFC;
     --bg-white: #FFFFFF;
     --border-color: #E2E8F0;
-    --gradient-1: linear-gradient(135deg, #9B7EBD 0%, #A8D8EA 50%, #4FD1C5 100%);
+    --gradient-1: linear-gradient(90deg, #9B7EBD 0%, #A8D8EA 50%, #4FD1C5 100%);
     --gradient-2: linear-gradient(135deg, rgba(155, 126, 189, 0.1) 0%, rgba(168, 216, 234, 0.1) 100%);
     --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -133,11 +133,13 @@ nav .container {
 }
 
 .btn-primary {
-    background: var(--gradient-1);
+    background: linear-gradient(90deg, #9B7EBD 0%, #A8D8EA 50%, #4FD1C5 100%);
     color: white;
     box-shadow: var(--shadow-md);
     border: none;
     padding: 16px 30px;
+    overflow: hidden;
+    position: relative;
 }
 
 .btn-primary:hover {

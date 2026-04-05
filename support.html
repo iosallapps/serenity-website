@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support & FAQ for Serenity AI Journal & Diary">
+    <title>Support - Serenity AI Journal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .support-page {
+            padding: 140px 0 80px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .support-page h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        .support-page .intro {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 60px;
+        }
+        .support-page h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 60px;
+            margin-bottom: 32px;
+        }
+        .faq-item {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            transition: all 0.3s;
+        }
+        .faq-item:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-md);
+        }
+        .faq-item h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+        .faq-item p {
+            line-height: 1.8;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+        .faq-item ul {
+            margin: 12px 0;
+            padding-left: 24px;
+        }
+        .faq-item li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .faq-item strong {
+            font-weight: 600;
+        }
+        .contact-section {
+            background: var(--gradient-2);
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 60px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        .contact-section p {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 32px;
+        }
+        .contact-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .category-label {
+            display: inline-block;
+            background: var(--gradient-1);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">Serenity AI Journal</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="support-page container">
+            <h1>Support & FAQ</h1>
+            <p class="intro">Find answers to common questions about Serenity AI Journal & Diary. Can't find what you're looking for? Contact us directly.</p>
+
+            <h2>Getting Started</h2>
+
+            <div class="faq-item">
+                <span class="category-label">BASICS</span>
+                <h3>How do I create my first journal entry?</h3>
+                <p><strong>Step-by-step:</strong></p>
+                <ol>
+                    <li>Open the app and tap the <strong>+</strong> button on the Home tab</li>
+                    <li>Select your current mood from the 10 emotion states</li>
+                    <li>Wait for AI to generate a personalized prompt (or use local prompt if offline)</li>
+                    <li>Write your reflection in the text field</li>
+                    <li>Optionally add tags or photos</li>
+                    <li>Tap <strong>Save</strong> to store your entry</li>
+                </ol>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">BASICS</span>
+                <h3>What are the 10 mood states?</h3>
+                <p>The app tracks these emotional states:</p>
+                <ul>
+                    <li><strong>😊 Joyful</strong> - Feeling happy and content</li>
+                    <li><strong>😌 Calm</strong> - Peaceful and relaxed</li>
+                    <li><strong>🙏 Grateful</strong> - Appreciating life's blessings</li>
+                    <li><strong>🤩 Excited</strong> - Full of energy and anticipation</li>
+                    <li><strong>😐 Neutral</strong> - Neither good nor bad</li>
+                    <li><strong>😰 Anxious</strong> - Worried or uneasy</li>
+                    <li><strong>😢 Sad</strong> - Feeling down or melancholy</li>
+                    <li><strong>😠 Angry</strong> - Frustrated or irritated</li>
+                    <li><strong>😴 Tired</strong> - Low on energy</li>
+                    <li><strong>😫 Stressed</strong> - Overwhelmed or tense</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">BASICS</span>
+                <h3>Do I need an account to use the app?</h3>
+                <p><strong>No!</strong> Serenity AI Journal is completely account-free. Your journal entries are stored locally on your device. No email, phone number, or personal information required. Just download and start journaling immediately.</p>
+            </div>
+
+            <h2>AI Features</h2>
+
+            <div class="faq-item">
+                <span class="category-label">AI</span>
+                <h3>How does the AI generate journal prompts?</h3>
+                <p>When you select a mood, the app sends only your mood type (e.g., "joyful" or "anxious") to Groq AI, which generates a personalized prompt designed to encourage meaningful reflection. The AI considers:</p>
+                <ul>
+                    <li>Your current emotional state</li>
+                    <li>Evidence-based journaling techniques</li>
+                    <li>Positive psychology principles</li>
+                </ul>
+                <p><strong>Important:</strong> Your actual journal content is NEVER sent to AI - only the mood selection.</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">AI</span>
+                <h3>Can I use the app offline?</h3>
+                <p><strong>Yes!</strong> The app works perfectly offline. If you're not connected to the internet, the app automatically uses local prompt generation. You'll still get thoughtful prompts - they just won't be AI-generated. All other features (mood tracking, analytics, streaks) work completely offline.</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">AI</span>
+                <h3>Is my journal content used to train AI?</h3>
+                <p><strong>Absolutely not.</strong> Your journal entries never leave your device (unless you enable iCloud sync). We only send your mood selection to generate prompts. Groq AI does not store or train on this data. Your journal remains completely private.</p>
+            </div>
+
+            <h2>Privacy & Security</h2>
+
+            <div class="faq-item">
+                <span class="category-label">PRIVACY</span>
+                <h3>How is my data protected?</h3>
+                <p>Your privacy is our top priority:</p>
+                <ul>
+                    <li><strong>Local storage:</strong> All journal entries stored on your device only</li>
+                    <li><strong>iOS encryption:</strong> Protected by system-level encryption</li>
+                    <li><strong>Biometric lock:</strong> Optional Face ID/Touch ID protection</li>
+                    <li><strong>No tracking:</strong> We don't collect analytics or personal data</li>
+                    <li><strong>No servers:</strong> We don't operate any servers storing your data</li>
+                </ul>
+                <p>Read our full <a href="privacy.html">Privacy Policy</a> for details.</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">PRIVACY</span>
+                <h3>How do I enable biometric lock?</h3>
+                <p><strong>To enable Face ID or Touch ID:</strong></p>
+                <ol>
+                    <li>Open the app and go to <strong>Settings</strong> tab</li>
+                    <li>Find the <strong>Biometric Lock</strong> section</li>
+                    <li>Toggle on <strong>Lock with Face ID</strong> (or Touch ID)</li>
+                    <li>Authenticate with your biometric</li>
+                </ol>
+                <p>Once enabled, the app will require biometric authentication each time you open it.</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">PRIVACY</span>
+                <h3>What happens to my data if I delete the app?</h3>
+                <p>When you delete the app:</p>
+                <ul>
+                    <li><strong>Local data is deleted:</strong> All journal entries stored on your device are permanently removed</li>
+                    <li><strong>iCloud data persists:</strong> If you enabled iCloud sync, entries remain in your iCloud until you manually delete them</li>
+                    <li><strong>No recovery:</strong> Once deleted, local data cannot be recovered unless you have a device backup</li>
+                </ul>
+                <p><strong>Before deleting:</strong> Use the Export feature to save your entries as CSV or text files.</p>
+            </div>
+
+            <h2>Features & Usage</h2>
+
+            <div class="faq-item">
+                <span class="category-label">FEATURES</span>
+                <h3>How do streaks work?</h3>
+                <p>A streak is the number of consecutive days you've created at least one journal entry. Streaks help build consistent journaling habits:</p>
+                <ul>
+                    <li><strong>Current streak:</strong> Days in a row you've journaled (resets if you miss a day)</li>
+                    <li><strong>Best streak:</strong> Your longest streak ever</li>
+                    <li><strong>Achievements:</strong> Unlock milestones at 3, 7, 14, 30, 60, and 100 days</li>
+                </ul>
+                <p><strong>Tip:</strong> Enable daily reminders in Settings to maintain your streak!</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">FEATURES</span>
+                <h3>How do I export my journal entries?</h3>
+                <p><strong>To export your data:</strong></p>
+                <ol>
+                    <li>Go to the <strong>History</strong> tab</li>
+                    <li>Tap the filter/options button (top right)</li>
+                    <li>Choose <strong>Export CSV</strong> or <strong>Export Text</strong></li>
+                    <li>Share via Files, Email, or any app</li>
+                </ol>
+                <p>CSV format is great for importing into spreadsheets. Text format is more readable.</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">FEATURES</span>
+                <h3>Can I add photos to journal entries?</h3>
+                <p><strong>Yes!</strong> You can attach one photo per journal entry:</p>
+                <ol>
+                    <li>While writing an entry, tap the <strong>photo icon</strong></li>
+                    <li>Choose from your Photo Library or take a new photo</li>
+                    <li>The photo is stored locally and compressed to save space</li>
+                </ol>
+                <p><strong>Note:</strong> Photos are included in iCloud sync if enabled.</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">FEATURES</span>
+                <h3>What are tags and how do I use them?</h3>
+                <p>Tags help organize and find journal entries. Examples: #work, #family, #health, #goals</p>
+                <p><strong>To add tags:</strong></p>
+                <ol>
+                    <li>While writing an entry, tap <strong>Add Tag</strong></li>
+                    <li>Type your tag name (no # needed)</li>
+                    <li>Tap Done or + to add it</li>
+                </ol>
+                <p>Use the History tab to filter entries by tags.</p>
+            </div>
+
+            <h2>Analytics & Insights</h2>
+
+            <div class="faq-item">
+                <span class="category-label">INSIGHTS</span>
+                <h3>When do I get insights about my moods?</h3>
+                <p>The <strong>Insights</strong> tab unlocks after you've created at least <strong>7 journal entries</strong>. Once unlocked, you'll see:</p>
+                <ul>
+                    <li><strong>Mood trends:</strong> Charts showing your emotional patterns over time</li>
+                    <li><strong>Most common moods:</strong> Which emotions you experience most</li>
+                    <li><strong>Journaling consistency:</strong> How often you reflect</li>
+                    <li><strong>Personalized insights:</strong> AI-generated observations about your patterns</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">INSIGHTS</span>
+                <h3>How are mood trends calculated?</h3>
+                <p>The app analyzes your journal entries over time to identify:</p>
+                <ul>
+                    <li><strong>Frequency:</strong> How often you experience each mood</li>
+                    <li><strong>Patterns:</strong> Time of day, day of week, or seasonal trends</li>
+                    <li><strong>Duration:</strong> How long mood patterns persist</li>
+                </ul>
+                <p>All analytics are calculated locally on your device - we never see your data.</p>
+            </div>
+
+            <h2>iCloud & Sync</h2>
+
+            <div class="faq-item">
+                <span class="category-label">SYNC</span>
+                <h3>How do I enable iCloud sync?</h3>
+                <p>iCloud sync is controlled by iOS system settings, not within the app:</p>
+                <ol>
+                    <li>Open iOS <strong>Settings</strong> app</li>
+                    <li>Tap your <strong>Apple ID</strong> at the top</li>
+                    <li>Tap <strong>iCloud</strong></li>
+                    <li>Find <strong>Serenity AI Journal</strong> and toggle it ON</li>
+                </ol>
+                <p>Once enabled, your entries sync across all iOS devices signed into the same iCloud account.</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">SYNC</span>
+                <h3>Is iCloud sync secure?</h3>
+                <p><strong>Yes!</strong> iCloud sync uses Apple's end-to-end encryption:</p>
+                <ul>
+                    <li>Data encrypted on your device before upload</li>
+                    <li>Encrypted in transit to iCloud servers</li>
+                    <li>Encrypted at rest in iCloud</li>
+                    <li>Only accessible by you on your devices</li>
+                </ul>
+                <p>We have no access to your iCloud data. It's protected by your Apple ID password and device passcode.</p>
+            </div>
+
+            <h2>Troubleshooting</h2>
+
+            <div class="faq-item">
+                <span class="category-label">HELP</span>
+                <h3>AI prompts aren't generating. What should I do?</h3>
+                <p><strong>Try these steps:</strong></p>
+                <ol>
+                    <li>Check your internet connection</li>
+                    <li>Wait a few seconds - AI generation can take 3-5 seconds</li>
+                    <li>If still not working, the app will automatically use local prompts</li>
+                    <li>Force-close and reopen the app</li>
+                    <li>Update to the latest version from App Store</li>
+                </ol>
+                <p>The app always works offline with local prompts, so you can continue journaling regardless.</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">HELP</span>
+                <h3>My streaks aren't tracking correctly. Why?</h3>
+                <p>Streaks require at least one journal entry per calendar day (based on your device timezone):</p>
+                <ul>
+                    <li>Quick mood check-ins count toward streaks</li>
+                    <li>Entries must be saved (not just drafted)</li>
+                    <li>Editing old entries doesn't extend streaks</li>
+                    <li>If you missed a day, your streak resets to 0</li>
+                </ul>
+                <p>Set up daily reminders in Settings to help maintain your streak!</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">HELP</span>
+                <h3>The app crashes or won't open. What should I do?</h3>
+                <p><strong>Troubleshooting steps:</strong></p>
+                <ol>
+                    <li>Force-quit the app and reopen it</li>
+                    <li>Restart your iPhone</li>
+                    <li>Update to the latest iOS version</li>
+                    <li>Update the app from App Store</li>
+                    <li>Free up storage space (Settings → General → iPhone Storage)</li>
+                </ol>
+                <p>If the issue persists, <a href="mailto:support@serenityjournalapp.com">contact support</a> with details about when the crash occurs.</p>
+            </div>
+
+            <h2>Billing & Subscriptions</h2>
+
+            <div class="faq-item">
+                <span class="category-label">BILLING</span>
+                <h3>Is the app free?</h3>
+                <p><strong>Yes!</strong> Serenity AI Journal is currently free to download and use. All core features are available without payment:</p>
+                <ul>
+                    <li>AI-powered journal prompts</li>
+                    <li>Unlimited journal entries</li>
+                    <li>Mood tracking and analytics</li>
+                    <li>Streaks and achievements</li>
+                    <li>Photo attachments</li>
+                    <li>Biometric lock</li>
+                    <li>Export features</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">BILLING</span>
+                <h3>Will there be premium features in the future?</h3>
+                <p>We may introduce optional premium features in the future, but core journaling functionality will always remain free. Any premium features would be clearly optional enhancements, not requirements.</p>
+            </div>
+
+            <h2>Account & Data Management</h2>
+
+            <div class="faq-item">
+                <span class="category-label">ACCOUNT</span>
+                <h3>How do I delete all my data?</h3>
+                <p><strong>To permanently delete all journal entries:</strong></p>
+                <ol>
+                    <li>Go to <strong>Settings</strong> tab</li>
+                    <li>Scroll to <strong>Clear All History</strong></li>
+                    <li>Tap and confirm deletion</li>
+                </ol>
+                <p><strong>Warning:</strong> This action cannot be undone. All local entries will be permanently deleted. If you have iCloud sync enabled, you'll need to delete iCloud data separately via iOS Settings.</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="category-label">ACCOUNT</span>
+                <h3>Can I use the app on multiple devices?</h3>
+                <p><strong>Yes!</strong> Enable iCloud sync and your journal entries will sync across all iOS devices signed into the same Apple ID. Each device can also have its own local entries if iCloud is disabled.</p>
+            </div>
+
+            <div class="contact-section">
+                <h2>Still Need Help?</h2>
+                <p>Can't find the answer you're looking for? Our support team is here to help.</p>
+                <div class="contact-buttons">
+                    <a href="mailto:support@serenityjournalapp.com" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Email Support
+                    </a>
+                    <a href="https://github.com/iosallapps/serenity-ai/issues" class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                        Report Issue
+                    </a>
+                </div>
+                <p style="margin-top: 24px; font-size: 14px;">We typically respond within 24-48 hours.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Serenity AI Journal</h3>
+                    <p>Your AI-powered path to peace</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="index.html#features">Features</a></li>
+                            <li><a href="https://apps.apple.com/app/serenity-ai-journal">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="support.html">Help Center</a></li>
+                            <li><a href="mailto:support@serenityjournalapp.com">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Serenity AI Journal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

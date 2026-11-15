@@ -1,0 +1,14 @@
+# Serenity: AI Mood Journal
+
+> AI mood journal and mental health diary for iPhone, by Visto Apps (https://vistoapps.com).
+
+Serenity lets you pick one of ten moods, get a journaling prompt, then write or speak your entry. It shows insights, streaks, a mood trends chart and a mood calendar built from your entries, can lock the app with Face ID or Touch ID, and has an optional crisis-detection aid that is off until you turn it on. Your journal is stored only on your iPhone: no account, no cloud sync. In Serenity Pro, AI prompts and reflections send your mood and short excerpts through a relay to Groq; the free version uses a built-in library. Serenity is a journaling tool, not medical care.
+
+Free to download for iPhone (iOS 18.0 or later, 45 languages) with ads. Serenity Pro removes ads and free limits and adds AI: weekly, monthly or yearly subscription, or a one-time lifetime purchase.
+
+## Pages
+- [Home](https://serenityjournalapp.com/)
+- [Support and FAQ](https://serenityjournalapp.com/support.html)
+- [Privacy Policy](https://serenityjournalapp.com/privacy.html)
+- [Terms of Use](https://serenityjournalapp.com/terms.html)
+- [App Store](https://apps.apple.com/app/id6761684674)

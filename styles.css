@@ -323,3 +323,7 @@ footer { position: relative; margin-top: 20px; background: rgba(8, 7, 26, .6); b
 @media (max-width: 1080px) { .steps.steps-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } .steps.steps-3 .step:nth-child(3) { border-left: 1px solid var(--divider); padding-left: 26px; } }
 @media (max-width: 640px) { .steps.steps-3 { grid-template-columns: 1fr; } .steps.steps-3 .step, .steps.steps-3 .step:nth-child(3) { border-left: 0; padding: 18px 0 0; border-top: 1px solid var(--divider); } .steps.steps-3 .step:first-child { border-top: 0; padding-top: 0; } }
 @media (max-width: 900px) { .steps.steps-3 { grid-template-columns: 1fr; row-gap: 0; } .steps.steps-3 .step, .steps.steps-3 .step:nth-child(3) { border-left: 0; padding: 18px 0 0; border-top: 1px solid var(--divider); } .steps.steps-3 .step:first-child { border-top: 0; padding-top: 0; } }
+
+/* overscroll:start  the aurora stretches from its bottom edge while iOS rubber-bands the top (--osy set by the script) */
+.animated-bg { transform-origin: 50% 100%; scale: 1 calc(1 + var(--osy, 0) / 1500); }
+/* overscroll:end */

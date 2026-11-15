@@ -23,7 +23,6 @@
   --text-2: #d6d6ea;
   --text-3: #a9a8c8;
   --glass: rgba(255, 255, 255, 0.06);
-  --glass-strong: rgba(255, 255, 255, 0.10);
   --glass-line: rgba(255, 255, 255, 0.14);
   --glass-line-2: rgba(255, 255, 255, 0.26);
   --divider: rgba(255, 255, 255, 0.14);
@@ -35,9 +34,6 @@
   --gutter: 40px;
   --ease: cubic-bezier(.2, .7, .2, 1);
   /* legacy names still used inline by a few elements */
-  --text-primary: var(--text);
-  --text-secondary: var(--text-2);
-  --border-light: var(--glass-line);
 }
 
 *, *::before, *::after { box-sizing: border-box; }

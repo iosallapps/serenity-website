@@ -57,6 +57,16 @@
             margin-top: 40px;
         }
 
+
+        .legal-toc{margin:0 0 24px;padding:20px 24px;border-radius:12px;background:var(--bg-light)}
+        .legal-toc ol{columns:2;column-gap:32px;margin:0;padding-left:20px}
+        .legal-toc li{margin-bottom:6px;break-inside:avoid}
+        .legal-section{scroll-margin-top:90px}
+        .table-wrap{overflow-x:auto;margin:16px 0 20px;border:1px solid rgba(128,128,128,.25);border-radius:12px}
+        .legal-table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+        .legal-table th,.legal-table td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid rgba(128,128,128,.2)}
+        .legal-table tbody tr:last-child>*{border-bottom:0}
+        @media (max-width:768px){.legal-toc ol{columns:1}.legal-table thead{display:none}.legal-table,.legal-table tbody,.legal-table tr,.legal-table th,.legal-table td{display:block;width:100%}.legal-table tr{padding:12px;border-bottom:1px solid rgba(128,128,128,.2)}.legal-table th,.legal-table td{border:0;padding:3px 0}.legal-table td::before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;font-weight:600;opacity:.7}}
         @media (max-width: 768px) {
             .legal-page {
                 padding: 40px 20px 60px;
@@ -97,231 +107,40 @@
 
     <main>
         <div class="legal-page container">
-            <h1>Terms of Service</h1>
-            <p class="last-updated">Last updated: November 11, 2026</p>
+<!--legal:start-->
+<h1>Terms of Use</h1>
+<p class="last-updated">Last updated: November 15, 2026</p>
+<nav class="legal-toc" aria-label="Contents"><ol>
+<li><a href="#provider">Who provides the app</a></li>
+<li><a href="#service">What Serenity: AI Mood Journal does</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#purchases">Purchases and subscriptions</a></li>
+<li><a href="#ads">Ads</a></li>
+<li><a href="#accuracy">Important: results and your responsibility</a></li>
+<li><a href="#third">Third-party services</a></li>
+<li><a href="#ip">Intellectual property</a></li>
+<li><a href="#warranty">Warranty and liability</a></li>
+<li><a href="#end">Ending the agreement</a></li>
+<li><a href="#apple">App Store (Apple) terms</a></li>
+<li><a href="#law">Law and disputes</a></li>
+<li><a href="#changes">Changes and language</a></li>
+</ol></nav>
+<section id="provider" class="legal-section"><h2>1. Who provides the app</h2><p>Visto Apps is the brand of Darius Cirjan, the developer and provider of Serenity: AI Mood Journal. These Terms are an agreement between you and Darius Cirjan ("we"). By installing or using Serenity: AI Mood Journal you accept them. If you do not agree, do not use the app.</p><p>Contact: <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a>. Last updated: November 15, 2026.</p></section>
+<section id="service" class="legal-section"><h2>2. What Serenity: AI Mood Journal does</h2><p>Serenity is a mood journal and diary for iPhone. You pick a mood, get a journaling prompt, write or speak your entry, and see insights, streaks and a mood calendar built from your entries. It can lock the app with Face ID, remind you to write, and, if you turn it on, check entries for signs of crisis and show support resources.</p></section>
+<section id="license" class="legal-section"><h2>3. License</h2><ul><li>You get a personal, non-exclusive, non-transferable, revocable license to use the app on devices you own or control, for personal or professional use.</li><li>You may not copy, resell, modify, reverse engineer or decompile the app, except where the law allows it, or use it for anything unlawful.</li><li>If you downloaded the app from the App Store, the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple Standard Licensed Application End User License Agreement</a> also applies and the Apple section below forms part of these Terms.</li></ul></section>
+<section id="purchases" class="legal-section"><h2>4. Purchases and subscriptions</h2><ul><li>Serenity is free to download. Serenity Pro removes ads and the free limits, and writes your prompts and reflections with AI. It is offered as a weekly, monthly or yearly subscription, or a one-time lifetime purchase, at the price shown in the app for your region. Some plans have a free trial for eligible new subscribers (the weekly plan shows a 3-day trial on its card), and a welcome or special offer at a reduced price may be shown from time to time. What is free and what is Pro is shown in the app.</li><li>Prices are shown in the app and in the store before you buy, in your currency, with VAT where applicable. Payment is taken by App Store when you confirm.</li><li>Subscriptions renew automatically at the same price for the same period unless you cancel at least 24 hours before the period ends. Your account is charged within 24 hours before renewal.</li><li>Manage or cancel: on iPhone, Settings, your name, Subscriptions.</li><li>A free trial, when offered, turns into a paid subscription at its end unless you cancel at least 24 hours before. Any unused part of a trial ends when you buy a subscription.</li><li>A lifetime purchase is a one-time payment that unlocks the paid features for as long as the app is offered, without renewal.</li><li>Restore purchases on a new device with Restore Purchases in the app, using the same store account.</li><li>Refunds and cancellations are handled by the store under its own rules: Apple at <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> under the <a href="https://www.apple.com/legal/internet-services/itunes/" rel="noopener">Apple Media Services Terms</a>. We cannot issue refunds ourselves.</li><li>EU and UK consumers: the 14-day right of withdrawal for digital content ends once you start using it after asking for immediate access, as allowed by Directive 2011/83/EU art. 16(m). The store's own cancellation policy still applies, and nothing here limits your statutory rights.</li></ul></section>
+<section id="ads" class="legal-section"><h2>5. Ads</h2><p>The free version shows ads served by Google AdMob, as described in the Privacy Policy. We are not responsible for the content of third-party ads or for the sites they open.</p></section>
+<section id="accuracy" class="legal-section"><h2>6. Important: results and your responsibility</h2><p>Serenity is a journaling and self-reflection tool. It is not a medical device, does not diagnose, treat or prevent any condition, and is not a substitute for professional mental health care. Insights, AI prompts and reflections are general suggestions and can be wrong.</p><p>Crisis Detection is an optional aid that looks for certain words and patterns in English and Romanian. It can miss a crisis or flag one that is not. If you or someone else is in danger, contact your local emergency services or a crisis line right away; the app lists resources by region.</p></section>
+<section id="third" class="legal-section"><h2>7. Third-party services</h2><p>Parts of the app rely on services run by others (listed in the Privacy Policy). They can change or stop, and their own terms apply. If a service becomes unavailable, the related feature may stop working; we will try to replace it.</p></section>
+<section id="ip" class="legal-section"><h2>8. Intellectual property</h2><p>The app, its name, design and code belong to Darius Cirjan. What you write, record and attach in your journal stays yours; we do not claim any right to it and we never receive a copy.</p></section>
+<section id="warranty" class="legal-section"><h2>9. Warranty and liability</h2><ul><li>The app is provided as is and as available. We do our best to keep it accurate and working, but we do not promise that it is free of errors or always available.</li><li>If you are a consumer in the EU or the UK, you keep all statutory rights, including the legal guarantee that digital content conforms to the contract (Directive (EU) 2019/770, in Romania OUG 141/2021). Nothing here limits those rights.</li><li>We are not liable for indirect or consequential loss, such as lost profit, lost data or decisions made from the app's results. Our total liability for any claim is limited to the amount you paid for the app in the 12 months before the claim.</li><li>None of these limits apply to liability that the law does not allow to be limited, including for intent, gross negligence, or death or personal injury.</li></ul></section>
+<section id="end" class="legal-section"><h2>10. Ending the agreement</h2><p>You can stop at any time by deleting the app; cancel any subscription in your store account as well. We may end your license if you break these Terms. Sections on liability, intellectual property and law survive the end.</p></section>
+<section id="apple" class="legal-section"><h2>11. App Store (Apple) terms</h2><ul><li>These Terms are between you and Darius Cirjan only, not with Apple. Apple is not responsible for the app or its content.</li><li>Apple has no obligation to provide maintenance or support for the app. Support: <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a>.</li><li>If the app fails to meet any applicable warranty, you may notify Apple and Apple will refund the purchase price, if any. To the maximum extent permitted by law, Apple has no other warranty obligation for the app.</li><li>Apple is not responsible for any claims relating to the app, including product liability, failure to meet legal or regulatory requirements, and consumer protection or privacy claims.</li><li>If a third party claims the app infringes their intellectual property, Apple is not responsible for the investigation, defense, settlement or discharge of that claim.</li><li>You confirm that you are not in a country subject to a U.S. Government embargo or designated as supporting terrorism, and that you are not on any U.S. Government list of prohibited or restricted parties.</li><li>You must follow the terms of any third-party service you use with the app.</li><li>Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you.</li></ul></section>
+<section id="law" class="legal-section"><h2>12. Law and disputes</h2><p>These Terms are governed by Romanian law. If you are a consumer, you also keep the protection of the mandatory laws of the country where you live, and you can bring a claim in the courts of that country. Otherwise the courts of Romania have jurisdiction.</p><p>Please write to <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a> first; most problems are solved quickly. Consumers can also contact their national consumer authority (in Romania, ANPC: <a href="https://anpc.ro" rel="noopener">anpc.ro</a>) or an alternative dispute resolution body.</p></section>
+<section id="changes" class="legal-section"><h2>13. Changes and language</h2><p>We may update these Terms when the app changes. The date at the top shows the latest version; important changes are announced in the store update notes. Changes do not apply to a subscription period you already paid for. These Terms are published in English.</p></section>
+<!--legal:end-->
 
-            <p>Welcome to Serenity AI Journal & Diary ("the App"). These Terms of Service ("Terms") govern your access to and use of our mobile application. By downloading, installing, or using the App, you agree to be bound by these Terms.</p>
-
-            <h2>1. Acceptance of Terms</h2>
-
-            <p>By using Serenity AI Journal & Diary, you acknowledge that you have read, understood, and agree to be bound by these Terms and our <a href="privacy.html">Privacy Policy</a>. If you do not agree to these Terms, please do not use the App.</p>
-
-            <h2>2. Description of Service</h2>
-
-            <p>Serenity AI Journal & Diary is a personal journaling application that provides:</p>
-            <ul>
-                <li>AI-powered journal prompts based on your selected mood</li>
-                <li>Mood tracking and analytics</li>
-                <li>Private, local storage of your journal entries</li>
-                <li>Optional iCloud synchronization</li>
-                <li>Insights and streak tracking</li>
-                <li>Biometric security features</li>
-            </ul>
-
-            <h2>3. Eligibility</h2>
-
-            <p>You must be at least 13 years old to use the App. If you are under 18, you must have permission from a parent or guardian to use the App. By using the App, you represent and warrant that you meet these eligibility requirements.</p>
-
-            <h2>4. License and Usage Rights</h2>
-
-            <h3>4.1 License Grant</h3>
-            <p>We grant you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the App on your personal iOS device solely for your personal, non-commercial use.</p>
-
-            <h3>4.2 Restrictions</h3>
-            <p>You agree NOT to:</p>
-            <ul>
-                <li>Copy, modify, or distribute the App or any part of it</li>
-                <li>Reverse engineer, decompile, or disassemble the App</li>
-                <li>Remove any copyright or proprietary notices</li>
-                <li>Use the App for any illegal or unauthorized purpose</li>
-                <li>Attempt to access or use portions of the App not intended for public use</li>
-                <li>Interfere with or disrupt the App's functionality</li>
-                <li>Use the App to harm, harass, or violate the rights of others</li>
-            </ul>
-
-            <h2>5. User Content</h2>
-
-            <h3>5.1 Your Journal Entries</h3>
-            <p>You retain all rights to the content you create in the App (your journal entries, photos, tags, etc.). We do not claim any ownership over your content.</p>
-
-            <h3>5.2 Data Storage</h3>
-            <p>Your journal entries are stored locally on your device. If you enable iCloud sync, entries are stored in your personal iCloud account. We do not have access to your journal content. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
-
-            <h3>5.3 Responsibility for Content</h3>
-            <p>You are solely responsible for your journal content. We do not monitor, review, or control user content. You agree not to create content that:</p>
-            <ul>
-                <li>Violates any laws or regulations</li>
-                <li>Infringes on intellectual property rights</li>
-                <li>Contains malicious code or viruses</li>
-            </ul>
-
-            <h2>6. AI Features and Third-Party Services</h2>
-
-            <h3>6.1 AI-Generated Prompts</h3>
-            <p>The App uses Groq AI to generate personalized journal prompts. These prompts are suggestions only and should not be considered professional advice. We make no guarantees about the accuracy, relevance, or suitability of AI-generated content.</p>
-
-            <h3>6.2 Third-Party Service</h3>
-            <p>AI features are generated by Groq, a third-party service, through our own server. An AI prompt sends your chosen mood and the app's language; a Mirror reflection also sends the first 200 characters of that entry and short previews of your last 7 entries, never a full entry. See our <a href="privacy.html">Privacy Policy</a>. Groq's terms and privacy policy apply to its processing.</p>
-
-            <h3>6.3 Offline Fallback</h3>
-            <p>The App includes local prompt generation when AI services are unavailable. This ensures continued functionality without internet connection.</p>
-
-            <h2>7. Health and Medical Disclaimer</h2>
-
-            <p><strong>IMPORTANT:</strong> Serenity AI Journal & Diary is a wellness and self-reflection tool, NOT a medical device or mental health treatment.</p>
-
-            <ul>
-                <li>The App does not provide medical advice, diagnosis, or treatment</li>
-                <li>AI-generated prompts are not professional therapy or counseling</li>
-                <li>Do not rely on the App for medical or mental health emergencies</li>
-                <li>Always seek professional help for mental health concerns</li>
-                <li>If you're experiencing a crisis, contact emergency services or a crisis hotline</li>
-            </ul>
-
-            <p>Use of the App does not create a doctor-patient or therapist-client relationship. Consult qualified healthcare professionals for medical or mental health advice.</p>
-
-            <h2>8. Subscription and Payments</h2>
-
-            <h3>8.1 Free Version</h3>
-            <p>Serenity is free to download. The free version includes core journaling with usage limits and shows ads from Google AdMob.</p>
-
-            <h3>8.2 Serenity Pro</h3>
-            <p>Serenity Pro unlocks unlimited AI prompts, advanced insights and voice journaling, and removes ads. It is offered as:</p>
-            <ul>
-                <li><strong>Weekly, monthly and yearly subscriptions</strong>, which renew automatically at the price shown before purchase until cancelled. A free trial may be offered on some plans to eligible new subscribers; if you do not cancel at least 24 hours before the trial ends, the subscription starts and you are charged.</li>
-                <li><strong>A lifetime purchase</strong>, a one-time payment that unlocks Serenity Pro for as long as the app is available, with no renewal.</li>
-            </ul>
-            <p>From time to time the app may show special or welcome offers at a reduced price. The price, period and any trial are always shown on the purchase screen before you confirm.</p>
-
-            <h3>8.3 Billing, Cancellation and Refunds</h3>
-            <p>Payment is charged to your Apple ID at confirmation of purchase. Subscriptions renew automatically unless auto-renew is turned off at least 24 hours before the end of the current period; your account is charged for renewal within 24 hours before the period ends. You can manage or cancel subscriptions in your App Store account settings at any time; cancelling stops future renewals and keeps access until the end of the paid period. Refunds are handled by Apple under its policies. All purchases are processed by Apple, and Apple's terms for in-app purchases apply. You can restore purchases on a new device from the paywall or Settings.</p>
-
-            <h2>9. Intellectual Property</h2>
-
-            <h3>9.1 Our Rights</h3>
-            <p>The App, including its design, features, code, graphics, and content (excluding your journal entries), is owned by Serenity AI Journal and protected by copyright, trademark, and other intellectual property laws.</p>
-
-            <h3>9.2 Trademarks</h3>
-            <p>"Serenity AI Journal," "Serenity AI Journal & Diary," and related logos are trademarks. You may not use these without written permission.</p>
-
-            <h2>10. Privacy and Data Security</h2>
-
-            <p>Your privacy is important to us. Our collection, use, and protection of your information is governed by our <a href="privacy.html">Privacy Policy</a>, which is incorporated into these Terms by reference.</p>
-
-            <p>Key points:</p>
-            <ul>
-                <li>Journal entries are stored locally on your device</li>
-                <li>We don't collect personal information</li>
-                <li>Only mood selection is sent to AI (not journal content)</li>
-                <li>Optional biometric lock for added security</li>
-            </ul>
-
-            <h2>11. Disclaimers and Limitations of Liability</h2>
-
-            <h3>11.1 "As Is" Provision</h3>
-            <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
-            <ul>
-                <li>Warranties of merchantability</li>
-                <li>Fitness for a particular purpose</li>
-                <li>Non-infringement</li>
-                <li>Accuracy or reliability</li>
-                <li>Uninterrupted or error-free operation</li>
-            </ul>
-
-            <h3>11.2 Limitation of Liability</h3>
-            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR:</p>
-            <ul>
-                <li>Indirect, incidental, special, consequential, or punitive damages</li>
-                <li>Loss of profits, data, or use</li>
-                <li>Interruption of business</li>
-                <li>Personal injury or property damage</li>
-            </ul>
-
-            <p>OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID TO USE THE APP (CURRENTLY $0).</p>
-
-            <h3>11.3 Data Loss</h3>
-            <p>While we implement security measures, we cannot guarantee protection against data loss. You are responsible for backing up your journal entries. We recommend enabling iCloud sync or regularly exporting your data.</p>
-
-            <h2>12. Indemnification</h2>
-
-            <p>You agree to indemnify and hold harmless Serenity AI Journal, its developers, and affiliates from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:</p>
-            <ul>
-                <li>Your use or misuse of the App</li>
-                <li>Your violation of these Terms</li>
-                <li>Your violation of any rights of third parties</li>
-                <li>Your journal content</li>
-            </ul>
-
-            <h2>13. Termination</h2>
-
-            <h3>13.1 By You</h3>
-            <p>You may stop using the App at any time by deleting it from your device. To delete all data, use the "Clear All History" feature in Settings before uninstalling.</p>
-
-            <h3>13.2 By Us</h3>
-            <p>We reserve the right to terminate or suspend your access to the App at any time, without notice, for:</p>
-            <ul>
-                <li>Violation of these Terms</li>
-                <li>Fraudulent or illegal activity</li>
-                <li>Discontinuation of the App</li>
-            </ul>
-
-            <h3>13.3 Effect of Termination</h3>
-            <p>Upon termination, your license to use the App ends immediately. Local data remains on your device until you delete the App.</p>
-
-            <h2>14. Updates and Modifications</h2>
-
-            <h3>14.1 App Updates</h3>
-            <p>We may release updates to improve features, fix bugs, or add functionality. You should keep the App updated to the latest version for optimal performance and security.</p>
-
-            <h3>14.2 Changes to Terms</h3>
-            <p>We reserve the right to modify these Terms at any time. We will notify you of material changes through:</p>
-            <ul>
-                <li>In-app notification</li>
-                <li>Email (if we have your email)</li>
-                <li>Update to this page with new "Last updated" date</li>
-            </ul>
-
-            <p>Continued use of the App after changes constitutes acceptance of the new Terms.</p>
-
-            <h2>15. Governing Law and Jurisdiction</h2>
-
-            <p>These Terms are governed by the laws of Romania, without regard to conflict of law principles. Any disputes shall be resolved in the courts of Romania.</p>
-
-            <p>For international users, local consumer protection laws may provide additional rights that cannot be waived by these Terms.</p>
-
-            <h2>16. Dispute Resolution</h2>
-
-            <h3>16.1 Informal Resolution</h3>
-            <p>Before filing any claim, please contact us at <a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a> to resolve the issue informally.</p>
-
-            <h3>16.2 Arbitration</h3>
-            <p>If informal resolution fails, disputes may be resolved through binding arbitration in accordance with Romanian arbitration rules, unless prohibited by local law.</p>
-
-            <h2>17. Severability</h2>
-
-            <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect. The invalid provision shall be modified to the minimum extent necessary to make it valid and enforceable.</p>
-
-            <h2>18. Entire Agreement</h2>
-
-            <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Serenity AI Journal regarding use of the App, superseding any prior agreements.</p>
-
-            <h2>19. No Waiver</h2>
-
-            <p>Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision.</p>
-
-            <h2>20. Contact Information</h2>
-
-            <div class="contact-box">
-                <p>For questions about these Terms of Service, please contact:</p>
-                <p><strong>Email:</strong> <a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a></p>
-                <p><strong>Website:</strong> <a href="https://serenityjournalapp.com">https://serenityjournalapp.com</a></p>
-                <p><strong>Support Center:</strong> <a href="support.html">Help Center</a></p>
-            </div>
-
-            <h2>21. Acknowledgment</h2>
-
-            <p>BY USING SERENITY AI JOURNAL & DIARY, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE.</p>
-        </div>
+</div>
     </main>
 
     <footer>
@@ -336,7 +155,7 @@
                         <h4>Product</h4>
                         <ul>
                             <li><a href="index.html#features">Features</a></li>
-                            <li><a href="https://apps.apple.com/app/serenity-ai-journal">Download</a></li>
+                            <li><a href="https://apps.apple.com/app/id6761684674">Download</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -350,13 +169,13 @@
                         <h4>Support</h4>
                         <ul>
                             <li><a href="support.html">Help Center</a></li>
-                            <li><a href="mailto:iosallapps@icloud.com">Contact Us</a></li>
+                            <li><a href="mailto:iosallapps@gmail.com">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Serenity AI Journal. All rights reserved.</p>
+                <p>&copy; 2026 Visto Apps, the brand of Darius Cirjan</p>
             </div>
         </div>
     </footer>

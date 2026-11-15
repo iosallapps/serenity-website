@@ -57,6 +57,16 @@
             margin-top: 40px;
         }
 
+
+        .legal-toc{margin:0 0 24px;padding:20px 24px;border-radius:12px;background:var(--bg-light)}
+        .legal-toc ol{columns:2;column-gap:32px;margin:0;padding-left:20px}
+        .legal-toc li{margin-bottom:6px;break-inside:avoid}
+        .legal-section{scroll-margin-top:90px}
+        .table-wrap{overflow-x:auto;margin:16px 0 20px;border:1px solid rgba(128,128,128,.25);border-radius:12px}
+        .legal-table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+        .legal-table th,.legal-table td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid rgba(128,128,128,.2)}
+        .legal-table tbody tr:last-child>*{border-bottom:0}
+        @media (max-width:768px){.legal-toc ol{columns:1}.legal-table thead{display:none}.legal-table,.legal-table tbody,.legal-table tr,.legal-table th,.legal-table td{display:block;width:100%}.legal-table tr{padding:12px;border-bottom:1px solid rgba(128,128,128,.2)}.legal-table th,.legal-table td{border:0;padding:3px 0}.legal-table td::before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;font-weight:600;opacity:.7}}
         @media (max-width: 768px) {
             .legal-page {
                 padding: 40px 20px 60px;
@@ -97,93 +107,44 @@
 
     <main>
         <div class="legal-page container">
-            <h1>Privacy Policy</h1>
-            <p class="last-updated">Last updated: November 11, 2026</p>
+<!--legal:start-->
+<h1>Privacy Policy</h1>
+<p class="last-updated">Last updated: November 15, 2026</p>
+<nav class="legal-toc" aria-label="Contents"><ol>
+<li><a href="#intro">Who we are</a></li>
+<li><a href="#glance">At a glance</a></li>
+<li><a href="#local">Data that stays on your device</a></li>
+<li><a href="#services">Services that receive data</a></li>
+<li><a href="#permissions">Permissions</a></li>
+<li><a href="#consent">Consent, ads and tracking</a></li>
+<li><a href="#purchases">Purchases</a></li>
+<li><a href="#retention">How long data is kept</a></li>
+<li><a href="#transfers">Transfers outside the EEA</a></li>
+<li><a href="#rights">Your rights (EEA, UK, Switzerland)</a></li>
+<li><a href="#us">United States</a></li>
+<li><a href="#children">Children</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#website">This website</a></li>
+<li><a href="#changes">Changes</a></li>
+</ol></nav>
+<section id="intro" class="legal-section"><h2>1. Who we are</h2><p>Visto Apps is the brand of Darius Cirjan, the developer and data controller. This policy explains what the Serenity: AI Mood Journal app (iOS) and the website https://serenityjournalapp.com do with personal data.</p><p>Contact for any privacy question or request: <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a>. Website: <a href="https://vistoapps.com" rel="noopener">vistoapps.com</a>. We answer within one month (art. 12 GDPR). We are not required to appoint a Data Protection Officer.</p><p>Last updated: November 15, 2026.</p></section>
+<section id="glance" class="legal-section"><h2>2. At a glance</h2><ul><li>No account. Serenity does not ask for your name, email or phone number.</li><li>Your journal stays on your iPhone: entries, moods, photos, voice recordings and notes. We have no copy of it, and nothing is synced to iCloud.</li><li>The free version sends nothing from your journal to any AI service. In Serenity Pro, AI prompts and reflections send your mood, a goal you gave in onboarding and short excerpts of entries (never a full entry) through a small relay we run on Cloudflare to Groq, a US company.</li><li>Voice entries are transcribed by Apple's speech recognition, which may use Apple's servers.</li><li>The free version shows ads from Google AdMob. Personalised ads only with your consent; in the EEA, UK and Switzerland no ad loads before you answer the consent form. Serenity Pro removes ads. Nothing you write is used for ads.</li><li>Usage statistics and crash reports (Google Firebase) are pseudonymous, follow your consent choice where the law requires it and can be turned off in Settings, Anonymous Analytics. They never contain your moods or text.</li><li>We do not sell personal data for money. The only server of ours that touches your data is the AI relay, which does not store it.</li></ul></section>
+<section id="local" class="legal-section"><h2>3. Data that stays on your device</h2><p>Entries, the mood you pick, notes, gratitude entries, tags, photos, voice recordings and their transcripts, streaks, insights and settings are stored only in the app's own database and files on your iPhone, with iOS Data Protection. There is no Serenity account and no cloud sync: we have no copy and cannot read them. Insights, patterns and the crisis check are computed on the device. Moods and entries can reveal your state of mind and sometimes health information, which the law treats as especially sensitive; that is why they stay on the device, and the only things that can leave it are listed in the table below. In the app, Settings, Export My Data gives you a copy, Clear All History removes your entries, and Settings, Delete All My Data erases everything; deleting the app removes it all too.</p></section>
+<section id="services" class="legal-section"><h2>4. Services that receive data</h2><p>Each service below receives data only when the part of the app that uses it runs. Google, Apple, RevenueCat and the other providers act as independent controllers or as our processors, under their own terms.</p><div class="table-wrap"><table class="legal-table"><thead><tr><th scope="col">Service</th><th scope="col">Data</th><th scope="col">Purpose</th><th scope="col">Legal basis</th><th scope="col">Retention</th></tr></thead><tbody><tr><th scope="row"><a href="https://policies.google.com/technologies/ads" rel="noopener">Google AdMob</a><br><small>Google Ireland Ltd / Google LLC</small></th><td data-label="Data">Advertising identifier (IDFA on iOS only if you allow tracking), IP address, device and app information, ad impressions and taps.</td><td data-label="Purpose">Showing ads in the free version. Personalised ads only with your consent; otherwise limited, non-personalised ads.</td><td data-label="Legal basis">Personalised ads: consent, art. 6(1)(a) GDPR and art. 5(3) ePrivacy. Limited ads: legitimate interest in funding the free app, art. 6(1)(f) GDPR.</td><td data-label="Retention">Set by Google (see its policy). Outside the EEA.</td></tr><tr><th scope="row"><a href="https://policies.google.com/privacy" rel="noopener">Google User Messaging Platform</a><br><small>Google Ireland Ltd / Google LLC</small></th><td data-label="Data">Your consent choices (IAB TCF string), stored on the device; device information needed to show the form.</td><td data-label="Purpose">Asking for and recording your consent in the EEA, UK and Switzerland.</td><td data-label="Legal basis">Legal obligation, art. 6(1)(c) GDPR</td><td data-label="Retention">On your device until you change it or delete the app. Outside the EEA.</td></tr><tr><th scope="row"><a href="https://firebase.google.com/support/privacy" rel="noopener">Google Analytics for Firebase (with Remote Config)</a><br><small>Google Ireland Ltd / Google LLC</small></th><td data-label="Data">A random app instance ID, events such as screens and features used, voice-note duration, paywall and purchase steps, badges unlocked, notification taps, app version, device model, OS, language and country derived from the IP address. If you turned on Crisis Detection, an event records that a check flagged an entry: a level, a score, the number of signals and the app language, never the text. Apple Search Ads campaign numbers, when the install came from an ad. Remote Config reads the paywall layout settings. Moods, entry text, notes, tags and search words are not sent.</td><td data-label="Purpose">Understanding which features are used and measuring the paywall, so we can improve the app.</td><td data-label="Legal basis">EEA, UK and Switzerland: consent given in Google's consent form, art. 6(1)(a) GDPR, and it stays off if you turn off Anonymous Analytics in Settings. Elsewhere: legitimate interest in improving the app, art. 6(1)(f) GDPR, with the same switch. Crisis Detection events are sent only if you turned that feature on.</td><td data-label="Retention">At most 14 months for event data. Outside the EEA.</td></tr><tr><th scope="row"><a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase Crashlytics</a><br><small>Google Ireland Ltd / Google LLC</small></th><td data-label="Data">Crash reports: stack trace, device model, OS and app version, and the device's vendor identifier (identifierForVendor), which stays the same for all apps of this developer on the device.</td><td data-label="Purpose">Finding and fixing crashes. Reports start only when analytics collection is allowed, as above.</td><td data-label="Legal basis">Same switch as analytics: consent, art. 6(1)(a) GDPR, in the EEA, UK and Switzerland; legitimate interest in a working app, art. 6(1)(f) GDPR, elsewhere.</td><td data-label="Retention">90 days. Outside the EEA.</td></tr><tr><th scope="row"><a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a><br><small>RevenueCat, Inc. (USA)</small></th><td data-label="Data">A random customer ID, purchase receipts and subscription status from the store, app version and country.</td><td data-label="Purpose">Checking which purchases you own and unlocking them, including on restore.</td><td data-label="Legal basis">Performance of a contract, art. 6(1)(b) GDPR: needed for the feature you use</td><td data-label="Retention">While you use the app, then deleted on request. Outside the EEA.</td></tr><tr><th scope="row"><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple App Store</a><br><small>Apple Distribution International Ltd</small></th><td data-label="Data">Your Apple Account, payment details and purchase history. We never see your payment details.</td><td data-label="Purpose">Selling and renewing purchases, refunds.</td><td data-label="Legal basis">Performance of a contract, art. 6(1)(b) GDPR: needed for the feature you use</td><td data-label="Retention">Set by Apple.</td></tr><tr><th scope="row"><a href="https://groq.com/privacy-policy" rel="noopener">Groq (AI text generation)</a><br><small>Groq, Inc. (USA)</small></th><td data-label="Data">Serenity Pro only. For an AI prompt: the mood you picked, the app language and, if you gave them in onboarding, your goal (for example managing anxiety or processing heavy emotions) and how predictable your mood is. For a Mirror reflection after you save an entry: that entry's mood and its first 200 characters, plus the mood and the first 50 characters of each of your last 7 entries. No entry is sent in full. Groq also sees the IP address of our server, not yours.</td><td data-label="Purpose">Writing the personalised prompt or the short reflection. The free version uses a built-in library and sends nothing to AI.</td><td data-label="Legal basis">Contract, art. 6(1)(b) GDPR: the AI features are part of Serenity Pro. Mood and entry excerpts can reveal health information (art. 9 GDPR); they are sent only for Serenity Pro AI features, never for the free version.</td><td data-label="Retention">Governed by Groq's own terms and policy; we do not control how long Groq keeps requests. Outside the EEA.</td></tr><tr><th scope="row"><a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare Workers (our AI relay)</a><br><small>Cloudflare, Inc. (USA), running code written by us</small></th><td data-label="Data">Every AI request passes through a small relay we run on Cloudflare. It receives the request described above over HTTPS, your IP address, and a random install number that the app made up. It checks the size, forwards the text to Groq and returns Groq's answer. It does not log or store the text. It stores only a counter per install number per month, to enforce a monthly limit of requests.</td><td data-label="Purpose">Keeping our Groq key out of the app and limiting abuse. Not used for anything else.</td><td data-label="Legal basis">Contract, art. 6(1)(b) GDPR (it delivers the AI feature) and legitimate interest in preventing abuse, art. 6(1)(f) GDPR.</td><td data-label="Retention">The request text is not stored. Counters expire after about 40 days. Cloudflare's own request logs follow its policy. Outside the EEA.</td></tr><tr><th scope="row"><a href="https://www.apple.com/legal/privacy/data/en/dictation-and-privacy/" rel="noopener">Apple speech recognition</a><br><small>Apple Inc.</small></th><td data-label="Data">When you record a voice entry, the audio is transcribed by Apple's speech recognition. Depending on your device and language, Apple may process the audio on its servers. The recording itself is saved only on your device.</td><td data-label="Purpose">Turning what you say into text for your entry.</td><td data-label="Legal basis">Contract, art. 6(1)(b) GDPR, and your permission to use the microphone and speech recognition. Apple acts under its own policy.</td><td data-label="Retention">Set by Apple.</td></tr><tr><th scope="row"><a href="https://www.apple.com/legal/privacy/data/en/apple-advertising/" rel="noopener">Apple Search Ads attribution (AdServices)</a><br><small>Apple Inc.</small></th><td data-label="Data">Once, after the first launch, the app asks iOS for an attribution token and sends it to Apple, which answers whether the install came from an Apple Search Ads campaign and which one. The token holds no personal data and needs no tracking permission. The answer is passed on to analytics only if analytics is allowed.</td><td data-label="Purpose">Measuring whether our App Store ads work.</td><td data-label="Legal basis">Legitimate interest, art. 6(1)(f) GDPR</td><td data-label="Retention">Set by Apple.</td></tr></tbody></table></div><ul><li>AI is a Serenity Pro feature. The free version writes prompts from a built-in library and sends no mood, goal or entry text to any AI service. In Serenity Pro, an AI prompt is requested when you pick a mood and a Mirror reflection is requested after you save an entry. The request goes from the app over HTTPS to our relay on Cloudflare, which forwards it to Groq. The relay does not store the text; Groq processes it under its own terms, and we have not verified how long Groq keeps requests. If you do not want any text from your journal to reach an AI service, do not use Serenity Pro's AI features. The app has no separate AI switch yet.</li><li>Crisis Detection is off until you turn it on. It then checks each saved entry on your device and shows support resources. The words are never sent anywhere; only the analytics event described above, and only if analytics is allowed.</li><li>RevenueCat also receives the Firebase app instance ID, so that purchases can be counted in the statistics, when analytics is allowed.</li><li>Ads are shown only in the free version, never together with crisis resources. Nothing you write is used for ads.</li></ul></section>
+<section id="permissions" class="legal-section"><h2>5. Permissions</h2><p>The app asks for these permissions only when you use the feature, and works without them. Change them anytime in your device settings.</p><ul><li><strong>Microphone.</strong> Only while you record a voice entry. The recording is saved on your device.</li><li><strong>Speech recognition.</strong> To transcribe a voice entry. See Apple speech recognition above for what Apple may process.</li><li><strong>Photos.</strong> Only the photos you pick to attach to an entry. They are stored on your device and are not uploaded.</li><li><strong>Face ID or Touch ID.</strong> Optional app lock. The check is done by iOS; the app never receives your face or fingerprint data.</li><li><strong>Notifications.</strong> Local reminders scheduled on the device. No push server is involved.</li><li><strong>Tracking (iOS, App Tracking Transparency).</strong> Asked once, after the consent form. If you choose Ask App Not to Track, the IDFA is not shared and ads are not personalised with it.</li></ul></section>
+<section id="consent" class="legal-section"><h2>6. Consent, ads and tracking</h2><p>In the EEA, the UK and Switzerland the app first shows Google's consent form (a certified consent management platform under the IAB Transparency and Consent Framework). Until you answer it, no ad is requested and no usage statistics are sent. If you refuse personalised ads, you still get limited, non-personalised ads.</p><p>On iOS the App Tracking Transparency prompt comes after the consent form. Ads load only once it is answered.</p><p>Change your choice anytime: in the app, Settings, Ad Privacy Settings (shown where the consent form applies). Anonymous Analytics, in Settings, switches analytics and crash reports off at any time, in every country. On iOS, also Settings, Privacy & Security, Tracking.</p><p>Buying the paid version removes ads.</p></section>
+<section id="purchases" class="legal-section"><h2>7. Purchases</h2><p>Purchases are made through App Store. The store processes the payment; we receive only a pseudonymous receipt, checked through RevenueCat, that tells the app which purchase you own. We never see your card or account details.</p></section>
+<section id="retention" class="legal-section"><h2>8. How long data is kept</h2><p>Data on your device stays until you delete it in the app (Settings, Clear All History or Delete All My Data) or delete the app. We keep no copy of your journal. The AI relay stores no request text; it keeps only a per-install request counter that expires after about 40 days. Data held by the other services above is kept for the period listed in the table. Emails you send us are kept as long as needed to answer, and at most 2 years.</p></section>
+<section id="transfers" class="legal-section"><h2>9. Transfers outside the EEA</h2><p>Some providers (Google, RevenueCat and others marked in the table) process data in the United States or other countries. Transfers rely on the EU-U.S. Data Privacy Framework for certified companies or on the European Commission's Standard Contractual Clauses (art. 45 and 46 GDPR).</p></section>
+<section id="rights" class="legal-section"><h2>10. Your rights (EEA, UK, Switzerland)</h2><p>You have the right to access, correct and delete your data, to restrict or object to processing (including to object at any time to processing based on legitimate interest), to data portability, and to withdraw consent at any time without affecting earlier processing.</p><p>Your journal is only on your device, so you already hold it: Settings, Export My Data gives you a copy and Delete All My Data erases it. Because the app has no account, we usually cannot tell which data at Google or RevenueCat is yours. Write to <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a> and include, if you can, the date of your install or purchase and the country, and we will forward the request to the provider.</p><p>You can complain to the supervisory authority where you live or work, or to ours: Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP), <a href="https://www.dataprotection.ro" rel="noopener">www.dataprotection.ro</a>. The list of EU authorities: <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en" rel="noopener">edpb.europa.eu</a>.</p></section>
+<section id="us" class="legal-section"><h2>11. United States</h2><ul><li>We do not sell personal information for money.</li><li>When you allow personalised ads, Google AdMob uses your advertising identifier for ads based on activity in other apps. Some US state laws (for example California) call this "sharing" or "targeted advertising". You can opt out at any time: refuse tracking on iOS (Settings, Privacy & Security, Tracking), or email us and we will treat it as an opt-out request.</li><li>Residents of California and other US states with privacy laws can ask to know, correct or delete their personal information, and will not be treated differently for doing so. Categories collected in the last 12 months are the ones in the table above (identifiers, internet activity, approximate location from IP, purchase records). Requests: <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a>.</li></ul></section>
+<section id="children" class="legal-section"><h2>12. Children</h2><p>Serenity: AI Mood Journal is not directed at children. We do not knowingly collect personal data from children under 13, or under the age of digital consent in their country (13 to 16 in the EU). If you believe a child gave us data, write to <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a> and we will delete what we can reach. Ads in the app are not designed for children.</p></section>
+<section id="security" class="legal-section"><h2>13. Security</h2><p>All network connections use HTTPS. Data on the device is protected by the operating system's app sandbox and encryption. No system is perfectly secure, so we keep what leaves your device to the minimum listed here.</p></section>
+<section id="website" class="legal-section"><h2>14. This website</h2><p>serenityjournalapp.com is hosted on GitHub Pages (GitHub, Inc., USA), which records the IP address of visitors in server logs for security. The site sets no cookies, stores nothing in your browser and uses no analytics or ads.</p></section>
+<section id="changes" class="legal-section"><h2>15. Changes</h2><p>If the app starts handling data differently, we update this page and the date at the top before the new version ships. Important changes are also mentioned in the store update notes.</p></section>
+<!--legal:end-->
 
-            <p>Serenity: AI Mood Journal ("Serenity", "we", "our") is a journaling app for iPhone. This policy explains what stays on your device, what leaves it, who receives it and the choices you have. It describes the app as it ships, version 1.13 and later.</p>
-
-            <h2>1. What stays on your iPhone</h2>
-            <p>Your journal lives in the app's own database on your device. There is no Serenity account, and your entries are never uploaded, backed up or synced by us. This includes:</p>
-            <ul>
-                <li><strong>Journal entries:</strong> what you write, the mood you pick, tags, photos you attach and the time of each entry</li>
-                <li><strong>Voice entries:</strong> recordings and their transcripts, made with Apple's on-device speech recognition</li>
-                <li><strong>Notes, gratitude entries, streaks and insights:</strong> computed on the device from your own entries</li>
-                <li><strong>Settings:</strong> reminders, Face ID or Touch ID lock and other preferences</li>
-            </ul>
-            <p>The data is protected by iOS Data Protection with your device passcode. Deleting the app deletes it.</p>
-
-            <h2>2. What leaves your iPhone, and why</h2>
-
-            <h3>2.1 AI prompts and reflections</h3>
-            <p>When you ask for an AI prompt, Serenity sends your chosen mood and the app's language. When you ask for a Mirror reflection, it also sends the first 200 characters of that entry and 50 character previews of your last 7 entries. No entry is ever sent in full. These requests go over HTTPS to our own server (a Cloudflare Worker), which forwards them to Groq to generate the text. Our server receives a random install number, used only to count requests against a monthly limit; it carries no name, account or device identifier. Neither we nor our server store the content of the request. Groq processes it under its own terms: <a href="https://groq.com/privacy-policy">groq.com/privacy-policy</a>. If you do not use the AI features, nothing from your journal leaves the device.</p>
-
-            <h3>2.2 Advertising (free version)</h3>
-            <p>The free version shows ads from Google AdMob: an ad when you open the app and, at most once a minute, after you save an entry or a note. Ads are never shown with crisis resources. Serenity Pro removes all ads.</p>
-            <ul>
-                <li>In the EEA, the UK and Switzerland you are asked for consent through Google's consent form before any ad or measurement starts. You can change your choice later in Settings, under Ad Privacy Settings.</li>
-                <li>Your device's advertising identifier (IDFA) is shared with Google only if you allow tracking in Apple's App Tracking Transparency prompt. If you do not, ads are not personalised with it.</li>
-                <li>Google may collect device and usage information to show and measure ads, as described in <a href="https://policies.google.com/technologies/partner-sites">Google's policy</a>. Nothing you write in Serenity is ever shared with Google or any advertiser.</li>
-            </ul>
-
-            <h3>2.3 Analytics and crash reports</h3>
-            <p>We use Google Firebase Analytics and Crashlytics to understand which features are used and to fix crashes. They run only where your consent choice allows it (in the EEA, the UK and Switzerland, through the consent form above), and you can turn them off at any time in Settings. They receive usage events (for example "an entry was saved" or "the paywall was shown"), device and app information and crash logs, never the text of your entries, notes, recordings or searches.</p>
-
-            <h3>2.4 Purchases</h3>
-            <p>Purchases are handled by Apple. We use RevenueCat to know whether you have Serenity Pro: it receives an anonymous app user ID and your purchase receipts from Apple, not your name or payment details.</p>
-
-            <h3>2.5 App Store campaign attribution</h3>
-            <p>Once, after the first launch, the app reads Apple's attribution token (AdServices) to learn whether the install came from an Apple Search Ads campaign. It contains no personal data.</p>
-
-            <h2>3. What we do not do</h2>
-            <ul>
-                <li>We do not sell your data, and we never use your journal for advertising.</li>
-                <li>We do not ask for your name, email or phone number, and there is no sign up.</li>
-                <li>We do not collect your location.</li>
-                <li>We do not store your entries on any server.</li>
-            </ul>
-
-            <h2>4. Your choices</h2>
-            <ul>
-                <li><strong>Ads and tracking:</strong> answer the consent form and the tracking prompt as you wish; change them in Settings (Ad Privacy Settings) and in iOS Settings, Privacy &amp; Security, Tracking.</li>
-                <li><strong>Analytics:</strong> turn Anonymous Analytics off in Settings.</li>
-                <li><strong>AI features:</strong> optional; the journal works fully without them.</li>
-                <li><strong>Your data:</strong> export your journal from History or Settings, delete single entries, or delete everything in Settings.</li>
-                <li><strong>App lock:</strong> turn Face ID or Touch ID protection on or off in Settings.</li>
-            </ul>
-
-            <h2>5. Crisis resources</h2>
-            <p>Serenity can recognise words that may signal a crisis and show support resources. This check runs entirely on your device and nothing about it is sent anywhere.</p>
-
-            <h2>6. Children</h2>
-            <p>Serenity is not directed at children under 13, and we do not knowingly collect personal information from them.</p>
-
-            <h2>7. International transfers</h2>
-            <p>AI requests, analytics, crash reports and ad requests may be processed in countries other than yours by Cloudflare, Groq, Google and RevenueCat, under their own safeguards. Your journal itself stays on your device.</p>
-
-            <h2>8. Retention</h2>
-            <p>We keep no copy of your journal. AI request content is not stored by us. Analytics, crash and advertising data are kept by Google under its retention settings; purchase records by Apple and RevenueCat as required for your purchases.</p>
-
-            <h2>9. Changes to this policy</h2>
-            <p>We will update this page and the date above when the app changes what it collects, and mention material changes in the app.</p>
-
-            <h2>10. Contact us</h2>
-
-            <div class="contact-box">
-                <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
-                <p><strong>Email:</strong> <a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a></p>
-                <p><strong>Website:</strong> <a href="https://serenityjournalapp.com">https://serenityjournalapp.com</a></p>
-                <p><strong>Support:</strong> <a href="support.html">Help Center</a></p>
-            </div>
-
-            <h2>11. In short</h2>
-            <ul>
-                <li>Your journal stays on your iPhone. No account, no upload, no sync.</li>
-                <li>AI features send only your mood, your language and short excerpts you ask about, never a full entry.</li>
-                <li>The free version has ads from Google AdMob, personalised only with your consent; Serenity Pro has none.</li>
-                <li>Analytics and crash reports follow your consent and can be turned off in Settings.</li>
-                <li>We never sell your data.</li>
-            </ul>
-        </div>
+</div>
     </main>
 
     <footer>
@@ -198,7 +159,7 @@
                         <h4>Product</h4>
                         <ul>
                             <li><a href="index.html#features">Features</a></li>
-                            <li><a href="https://apps.apple.com/app/serenity-ai-journal">Download</a></li>
+                            <li><a href="https://apps.apple.com/app/id6761684674">Download</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -212,13 +173,13 @@
                         <h4>Support</h4>
                         <ul>
                             <li><a href="support.html">Help Center</a></li>
-                            <li><a href="mailto:iosallapps@icloud.com">Contact Us</a></li>
+                            <li><a href="mailto:iosallapps@gmail.com">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Serenity AI Journal. All rights reserved.</p>
+                <p>&copy; 2026 Visto Apps, the brand of Darius Cirjan</p>
             </div>
         </div>
     </footer>
